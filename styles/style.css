@@ -1,2 +1,127 @@
-/* import google font style */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap');
+/* ==========================
+    import google font style 
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/*============================
+        common styles 
+ =============================*/
+:root {
+    --orange: #FF900E;
+    --textColor: #727272;
+    --titleColor: #131313;
+    --footerBlack: #424242;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*============================
+        Header  Styles 
+ =============================*/
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.header {
+    width: 87%;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+nav {
+    padding: 50px 0 102px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--titleColor);
+}
+
+.header ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header ul li {
+    list-style-type: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--footerBlack);
+}
+
+.banner-info {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-info h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--titleColor);
+    margin-bottom: 52px;
+}
+
+.banner-info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--textColor);
+    margin-bottom: 32px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/*============================
+        Responsive  Styles 
+ =============================*/
+
+@media only screen and (max-width:576px) {
+
+    /* header section */
+
+    nav {
+        padding-bottom: 40px;
+    }
+
+    nav h2 {
+        font-size: 35px;
+        color: var(--orange);
+    }
+
+    nav,
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header ul {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .banner-info h1 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 55px;
+        margin-bottom: 25px;
+    }
+}
