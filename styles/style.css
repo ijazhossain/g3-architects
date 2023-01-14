@@ -3,6 +3,7 @@
 ==============================*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+
 /*============================
         common styles 
  =============================*/
@@ -19,6 +20,34 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+}
+
+.info-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--textColor);
+    margin: 24px 0 32px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--titleColor);
+}
+
+.btn {
+
+    height: 64px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 25px;
+    background-color: var(--orange);
+    border-radius: 8px;
+    border: none;
+
 }
 
 /*============================
@@ -39,13 +68,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-nav h2 {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
-    color: var(--titleColor);
 }
 
 .header ul {
@@ -80,15 +102,97 @@ nav h2 {
 }
 
 .banner-info p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--textColor);
+
     margin-bottom: 32px;
 }
 
-.banner img {
+.banner img,
+.feature-image-container img,
+.feature-banner img {
     width: 100%;
+}
+
+
+/*============================
+        Main section  Styles 
+ =============================*/
+main {
+    margin-top: 83px;
+}
+
+/*-----------------------------
+        feature section
+ -------------------------------*/
+.features-overview {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 76px;
+}
+
+.feature-image-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-overview {
+    width: 50%;
+}
+
+#quick {
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.feature-item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--titleColor);
+}
+
+.features-details-container {
+    width: 87%;
+    margin: 130px auto;
+    display: flex;
+    gap: 54px;
+}
+
+.features-detail {
+    width: 45%;
+}
+
+.feature-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+}
+
+.feature-item p {
+    margin-bottom: 0px;
+}
+
+.feature-banner {
+    position: relative;
+    width: 55%;
+}
+
+.feature-banner img {
+    width: 90%;
+    margin-left: auto;
+    display: block;
+}
+
+.experience-btn {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 342px;
+    height: 200px;
 }
 
 /*============================
@@ -97,15 +201,18 @@ nav h2 {
 
 @media only screen and (max-width:576px) {
 
-    /* header section */
+    /*-- Header Section-- */
 
     nav {
         padding-bottom: 40px;
     }
 
     nav h2 {
+        color: var(--orange) !important;
+    }
+
+    .section-title {
         font-size: 35px;
-        color: var(--orange);
     }
 
     nav,
@@ -124,4 +231,51 @@ nav h2 {
         line-height: 55px;
         margin-bottom: 25px;
     }
+
+    /*-- Main Section--*/
+    main {
+        margin-top: 43px;
+    }
+
+    .features-overview {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature-overview {
+        width: 100%;
+    }
+
+    .feature-image-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .features-details-container {
+        width: 87%;
+        margin: 60px auto;
+        flex-direction: column;
+    }
+
+    .features-detail,
+    .feature-banner {
+        width: 100%;
+    }
+
+    .feature-banner img {
+        width: 100%;
+    }
+
+    .experience-btn {
+        position: static;
+        margin-top: 32px;
+        width: 100%;
+        height: 200px;
+    }
+
 }
