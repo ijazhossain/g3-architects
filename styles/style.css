@@ -449,6 +449,12 @@ main {
         margin-bottom: 50px;
     }
 
+    .footer {
+        width: 77%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 /*====================================================
