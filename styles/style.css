@@ -5,7 +5,7 @@
 
 
 /*============================
-        common styles 
+        Common styles 
  =============================*/
 :root {
     --orange: #FF900E;
@@ -202,11 +202,12 @@ main {
 }
 
 /*-----------------------------
-        Fact Section
+            Fact Section
  -------------------------------*/
 .facts {
     width: 87%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .facts>p {
@@ -216,7 +217,6 @@ main {
 .facts-container {
     width: 93%;
     margin: 0px auto;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -254,11 +254,14 @@ main {
     color: var(--textColor);
 }
 
-/* Sponsor Section */
+/*--------------------------- 
+        Sponsor Section 
+------------------------------*/
 .sponsor {
     width: 87%;
-    margin: 180px auto;
+    margin: 130px auto;
     text-align: center;
+
 
 }
 
@@ -275,13 +278,36 @@ main {
     filter: grayscale(100%);
 }
 
+/*------------------------- 
+        video section   
+---------------------------*/
+.project-video {
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-video h2 {
+
+    margin-bottom: 50px;
+}
+
+.video {
+    width: 80%;
+    height: 400px;
+    display: block;
+    margin: 80px auto;
+}
+
 /*============================
         Responsive  Styles 
  =============================*/
 
 @media only screen and (max-width:576px) {
 
-    /*-- Header Section-- */
+    /*------------------------ 
+        Header responsive
+    ------------------------ */
 
     nav {
         padding-bottom: 40px;
@@ -312,13 +338,17 @@ main {
         margin-bottom: 25px;
     }
 
-    /*-- Main Section--*/
+    /*---------------------- 
+        Main responsive
+    -----------------------*/
 
     main {
         margin-top: 43px;
     }
 
-    /* Features style */
+    /*------------------------- 
+        Features responsive 
+    ---------------------------*/
     .features-overview {
         flex-direction: column;
         gap: 30px;
@@ -361,7 +391,9 @@ main {
         height: 200px;
     }
 
-    /* Facts Styles */
+    /*---------------------- 
+        Facts responsive 
+    ------------------------*/
     .facts-container {
         grid-template-columns: 1fr;
         width: 100%;
@@ -372,7 +404,9 @@ main {
         margin-bottom: 50px;
     }
 
-    /* Sponsor Style */
+    /*------------------------- 
+        Sponsor responsive 
+    ---------------------------*/
     .sponsor {
         margin: 80px auto;
     }
@@ -385,7 +419,16 @@ main {
     .sponsor-item img {
         width: 60%;
     }
+
+    /*-------------------------- 
+            Video responsive 
+    ----------------------------*/
+    .video {
+        width: 100%;
+        height: 315px;
+    }
 }
+
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .experience-btn {
@@ -405,4 +448,6 @@ main {
     .sponsor-item img {
         width: 60%;
     }
+
+
 }
