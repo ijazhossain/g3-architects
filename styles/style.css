@@ -271,7 +271,6 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 50px;
-    ;
 }
 
 .sponsor-item img {
@@ -455,7 +454,7 @@ main {
 /*====================================================
         Responsive  Styles For Medium Device
  ======================================================*/
-@media only screen and (min-width: 577px) and (max-width: 992px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     .experience-btn {
         width: 100%;
         bottom: 50%;
@@ -473,6 +472,10 @@ main {
     .sponsor-item img {
         width: 60%;
     }
+}
 
-
+@media screen and (min-width:768px) and (max-width: 991px) {
+    .experience-btn {
+        bottom: 60%;
+    }
 }
