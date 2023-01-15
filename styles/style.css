@@ -1,12 +1,12 @@
-/* ==========================
-    import google font style 
-==============================*/
+/* ======================================
+         Import google font style 
+=========================================*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 
-/*============================
-        Common styles 
- =============================*/
+/*========================================
+            Common styles 
+ =========================================*/
 :root {
     --orange: #FF900E;
     --textColor: #727272;
@@ -102,8 +102,11 @@ nav {
 }
 
 .banner-info p {
-
     margin-bottom: 32px;
+}
+
+.banner-info button {
+    margin-bottom: 50px;
 }
 
 .banner img,
@@ -113,15 +116,15 @@ nav {
 }
 
 
-/*============================
+/*==================================
         Main section  Styles 
- =============================*/
+ ===================================*/
 main {
     margin-top: 83px;
 }
 
 /*-----------------------------
-        Feature Section
+        Features Section
  -------------------------------*/
 .features-overview {
     width: 80%;
@@ -261,8 +264,6 @@ main {
     width: 87%;
     margin: 130px auto;
     text-align: center;
-
-
 }
 
 .sponsors-container {
@@ -299,9 +300,29 @@ main {
     margin: 80px auto;
 }
 
-/*============================
-        Responsive  Styles 
- =============================*/
+/* ===========================================
+        Footer section styles
+===============================================*/
+.footer {
+    width: 87%;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin: 50px auto;
+    /* margin-bottom: 216px; */
+    padding: 39px 0;
+    text-align: center;
+    color: var(--footerBlack);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+
+
+
+/*====================================================
+        Responsive  Styles For Small Device
+ ======================================================*/
 
 @media only screen and (max-width:576px) {
 
@@ -426,10 +447,14 @@ main {
     .video {
         width: 100%;
         height: 315px;
+        margin-bottom: 50px;
     }
+
 }
 
-
+/*====================================================
+        Responsive  Styles For Medium Device
+ ======================================================*/
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .experience-btn {
         width: 100%;
