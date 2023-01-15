@@ -197,7 +197,7 @@ main {
     position: absolute;
     bottom: 15%;
     left: 0;
-    width: 342px;
+    width: 60%;
     height: 200px;
 }
 
@@ -252,6 +252,27 @@ main {
     font-size: 16px;
     line-height: 23px;
     color: var(--textColor);
+}
+
+/* Sponsor Section */
+.sponsor {
+    width: 87%;
+    margin: 180px auto;
+    text-align: center;
+
+}
+
+.sponsors-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    ;
+}
+
+.sponsor-item img {
+    width: 100%;
+    filter: grayscale(100%);
 }
 
 /*============================
@@ -349,5 +370,39 @@ main {
 
     .facts>p {
         margin-bottom: 50px;
+    }
+
+    /* Sponsor Style */
+    .sponsor {
+        margin: 80px auto;
+    }
+
+    .sponsors-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+    }
+
+    .sponsor-item img {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .experience-btn {
+        width: 100%;
+        bottom: 50%;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsors-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+    }
+
+    .sponsor-item img {
+        width: 60%;
     }
 }
