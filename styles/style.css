@@ -121,7 +121,7 @@ main {
 }
 
 /*-----------------------------
-        feature section
+        Feature Section
  -------------------------------*/
 .features-overview {
     width: 80%;
@@ -164,6 +164,11 @@ main {
     width: 45%;
 }
 
+.features-detail h2 {
+    border-left: 5px solid var(--orange);
+    padding-left: 21px;
+}
+
 .feature-item {
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -185,6 +190,7 @@ main {
     width: 90%;
     margin-left: auto;
     display: block;
+
 }
 
 .experience-btn {
@@ -193,6 +199,59 @@ main {
     left: 0;
     width: 342px;
     height: 200px;
+}
+
+/*-----------------------------
+        Fact Section
+ -------------------------------*/
+.facts {
+    width: 87%;
+    margin: 0 auto;
+}
+
+.facts>p {
+    margin-bottom: 100px;
+}
+
+.facts-container {
+    width: 93%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.fact-item {
+    border: 1px solid var(--orange);
+    padding: 45px 36px;
+    border-radius: 8px;
+    transition: transform 3s ease-in-out;
+}
+
+.fact-item:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--orange);
+    transform: rotateY(360deg)
+}
+
+.fact-item h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    ;
+}
+
+.fact-item:hover h2 {
+    color: white;
+}
+
+.fact-item p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--textColor);
 }
 
 /*============================
@@ -233,10 +292,12 @@ main {
     }
 
     /*-- Main Section--*/
+
     main {
         margin-top: 43px;
     }
 
+    /* Features style */
     .features-overview {
         flex-direction: column;
         gap: 30px;
@@ -269,6 +330,7 @@ main {
 
     .feature-banner img {
         width: 100%;
+
     }
 
     .experience-btn {
@@ -278,4 +340,14 @@ main {
         height: 200px;
     }
 
+    /* Facts Styles */
+    .facts-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .facts>p {
+        margin-bottom: 50px;
+    }
 }
